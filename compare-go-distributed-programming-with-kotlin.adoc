@@ -1,0 +1,75 @@
+image::images/logo_th-rosenheim.png[TH Rosenheim, 200, 400]
+
+===== Rosenheim Technical University of Applied Sciences
+
+=== Concepts of Programming Languages
+====== Semester work
+
+== Compare Go Distributed Programming with Kotlin
+
+====== Author: Andreas Martin Klinger
+====== Submission date: January 10, 2021 
+
+[[Text]]
+== Abstract
+...
+
+[[numbered]]
+=== Table of Contents
+.	Introduction
+..	Introduction in Go
+..	Introduction in Kotlin
+.	Distributed programming
+.	Comparison between Go and Kotlin
+..	Comparison 1
+..	Comparison 2
+..	Comparison 3
+..	Comparison 4
+.	Discussion and conclusion
+.	References
+
+[[Text]]
+:numbered:
+
+== Introduction
+...
+
+=== Introduction in Go
+...
+
+=== Introduction in Kotlin
+...
+
+== Distributed programming
+...
+
+== Comparison between Go and Kotlin
+...
+
+=== Comparison 1
+...
+
+[source, GO]
+include::go-examples/test.go[]
+
+*Figure 1: Go example* 
+
+[source, Kotlin]
+include::kotlin-examples/src/main/kotlin/test.kt[]
+
+*Figure 2: Kotlin example* 
+
+=== Comparison 2
+...
+
+=== Comparison 3
+...
+
+=== Comparison 4
+...
+
+== Discussion and conclusion
+...
+
+== References
+...
