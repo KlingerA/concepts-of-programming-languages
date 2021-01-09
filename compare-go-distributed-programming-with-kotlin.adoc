@@ -83,7 +83,7 @@ While many programming languages use threads and consume a lot of memory in the 
 
 [#goroutines,source,go,linenums,caption='',title='{figure-caption} {counter:refnum} - Goroutines (Ramanathan 2020)']
 ----
-include::{go-source}/goroutines.go[lines=13..30]
+include::./go-examples/goroutines.go[lines=13..30]
 ----
 
 <<goroutines>> shows the exemplary implementation of goroutines. Two goroutines `numbers` and `alphabets` are started, which then run simultaneously and output the following:
@@ -97,7 +97,7 @@ Kotlin, on the other hand, normally works multi-threaded. The equivalent to goro
 
 [#coroutines,source,kotlin,linenums,caption='',title='{figure-caption} {counter:refnum} - Coroutines']
 ----
-include::{kotlin-source}/coroutines.kt[lines=9..31]
+include::./kotlin-examples/src/main/kotlin/coroutines.kt[lines=9..31]
 ----
 
 <<coroutines>> shows the corresponding implementation in Kotlin. Here, as in the previous example, the functions `numbers` and `alphabets` are called. The output is also the same:
@@ -131,22 +131,22 @@ The implementation of client-server applications is extremely important when it 
 
 [#go-socket-server,source,go,linenums,caption='',title='{figure-caption} {counter:refnum} - Go socket server (Wiiliams 2020)']
 ----
-include::{go-source}/socket-server.go[lines=22..53]
+include::./go-examples/socket-server.go[lines=22..53]
 ----
 
 [#go-socket-client,source,go,linenums,caption='',title='{figure-caption} {counter:refnum} - Go socket client (Williams 2020)']
 ----
-include::{go-source}/socket-client.go[lines=22..39]
+include::./go-examples/socket-client.go[lines=22..39]
 ----
 
 [#kotlin-socket-server,source,kotlin,linenums,caption='',title='{figure-caption} {counter:refnum} - Kotlin socket server (Mogensen 2018)']
 ----
-include::{kotlin-source}/socket-server.kt[lines=13..33;40..67]
+include::./kotlin-examples/src/main/kotlin/socket-server.kt[lines=13..33;40..67]
 ----
 
 [#kotlin-socket-client,source,koltin,linenums,caption='',title='{figure-caption} {counter:refnum} - Kotlin socket client (Mogensen 2018)']
 ----
-include::{kotlin-source}/socket-client.kt[lines=19..52]
+include::./kotlin-examples/src/main/kotlin/socket-client.kt[lines=19..52]
 ----
 
 Both implementations consist of a `socket-server` (<<go-socket-server>>, <<kotlin-socket-server>>) and a `socket-client` (<<go-socket-client>>, <<kotlin-socket-client>>). The client can also be started multiple times.
