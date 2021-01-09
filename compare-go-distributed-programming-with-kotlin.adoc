@@ -2,8 +2,8 @@
 Andreas Martin Klinger <andreas.b.klinger@stud.th-rosenheim.de>
 1.0, January 10, 2021
 :description: Semester work on the comparison of distributed programming in Go and Kotlin
-:go-source: go-examples
-:kotlin-source: kotlin-examples/src/main/kotlin
+:go-source: ./go-examples
+:kotlin-source: ./kotlin-examples/src/main/kotlin
 :figure-caption: Figure
 :toc: macro
 
