@@ -2,11 +2,16 @@
 Andreas Martin Klinger <andreas.b.klinger@stud.th-rosenheim.de>
 1.0, January 10, 2021
 :description: Semester work on the comparison of distributed programming in Go and Kotlin
+ifdef::env-github[]
+:go-source: https://github.com/KlingerA/concepts-of-programming-languages/tree/master/go-examples
+:kotlin-source: https://github.com/KlingerA/concepts-of-programming-languages/tree/master/kotlin-examples/src/main/kotlin
+endif::[]
+ifndef::env-github[]
 :go-source: ./go-examples
 :kotlin-source: ./kotlin-examples/src/main/kotlin
+endif::[]
 :figure-caption: Figure
 :toc: macro
-
 
 image::images/logo_th-rosenheim.png[TH Rosenheim, 250, 79]
 
@@ -49,12 +54,12 @@ Distributed systems have always been of paramount importance in software develop
 This work will look at what distributed systems are in the first place, what they have to do with distributed programs, and finally, what distributed programming is. Furthermore, the programming languages Go and Kotlin will be compared in terms of the implementation of some concepts of distributed programming.
 
 [#header-introduction-go]
-=== Introduction in Go
+=== Introduction to Go
 
 Go, also called Golang, is an open-source programming language first developed by Google employees in 2009. It was originally developed for systems programming. Modern approaches such as concurrency and the garbage collector ensure exceptional performance. Parallelization is also one of its strengths. Go is particularly popular when it comes to scalable cloud applications (Augsten 2020a).
 
 [#header-introduction-kotlin]
-=== Introduction in Kotlin
+=== Introduction to Kotlin
 
 Kotlin is an object-oriented programming language developed by the Czech company JetBrains. It was first released in 2011 and the first stable version appeared in 2016. It can be transformed into JavaScript source code as well as into byte code for the Java Virtual Machine (JVM). Kotlin's strengths include full compatibility with Java and fast lambda expressions. In addition to server-side applications, Kotlin is also excellent for developing Android apps (Augsten 2020b).
 
@@ -83,7 +88,7 @@ While many programming languages use threads and consume a lot of memory in the 
 
 [#goroutines,source,go,linenums,caption='',title='{figure-caption} {counter:refnum} - Goroutines (Ramanathan 2020)']
 ----
-include::./go-examples/goroutines.go[lines=13..30]
+include::{go-source}/goroutines.go[lines=13..30]
 ----
 
 <<goroutines>> shows the exemplary implementation of goroutines. Two goroutines `numbers` and `alphabets` are started, which then run simultaneously and output the following:
@@ -97,7 +102,7 @@ Kotlin, on the other hand, normally works multi-threaded. The equivalent to goro
 
 [#coroutines,source,kotlin,linenums,caption='',title='{figure-caption} {counter:refnum} - Coroutines']
 ----
-include::./kotlin-examples/src/main/kotlin/coroutines.kt[lines=9..31]
+include::{kotlin-source}/coroutines.kt[lines=9..31]
 ----
 
 <<coroutines>> shows the corresponding implementation in Kotlin. Here, as in the previous example, the functions `numbers` and `alphabets` are called. The output is also the same:
@@ -125,28 +130,28 @@ While Go is built directly in binaries, Kotlin is built in byte code, which runs
 From this it can be concluded that with a strong focus on performance, Go can be preferred over Kotlin.
 
 [#header-comparison-3]
-=== Socket Server and Client
+=== Socket server and client
 
 The implementation of client-server applications is extremely important when it comes to the development of distributed systems. The following examples demonstrate the use of sockets in Go and Kotlin.
 
 [#go-socket-server,source,go,linenums,caption='',title='{figure-caption} {counter:refnum} - Go socket server (Wiiliams 2020)']
 ----
-include::./go-examples/socket-server.go[lines=22..53]
+include::{go-source}/socket-server.go[lines=22..53]
 ----
 
 [#go-socket-client,source,go,linenums,caption='',title='{figure-caption} {counter:refnum} - Go socket client (Williams 2020)']
 ----
-include::./go-examples/socket-client.go[lines=22..39]
+include::{go-source}/socket-client.go[lines=22..39]
 ----
 
 [#kotlin-socket-server,source,kotlin,linenums,caption='',title='{figure-caption} {counter:refnum} - Kotlin socket server (Mogensen 2018)']
 ----
-include::./kotlin-examples/src/main/kotlin/socket-server.kt[lines=13..33;40..67]
+include::{kotlin-source}/socket-server.kt[lines=13..33;40..67]
 ----
 
 [#kotlin-socket-client,source,koltin,linenums,caption='',title='{figure-caption} {counter:refnum} - Kotlin socket client (Mogensen 2018)']
 ----
-include::./kotlin-examples/src/main/kotlin/socket-client.kt[lines=19..52]
+include::{kotlin-source}/socket-client.kt[lines=19..52]
 ----
 
 Both implementations consist of a `socket-server` (<<go-socket-server>>, <<kotlin-socket-server>>) and a `socket-client` (<<go-socket-client>>, <<kotlin-socket-client>>). The client can also be started multiple times.
@@ -160,7 +165,11 @@ One difference in this implementation is that the Go example uses coroutines (`g
 [#header-discussion-conclusion]
 == Discussion and conclusion
 
-...
+This work, in addition to a brief introduction to distributed programming, was intended to make a comparison between Go and Kotlin. It became clear that both languages are suitable for the development of distributed systems.
+
+By goroutines and/or coroutines it became clear that certain programming concepts, which are possibly necessary for distributed systems, find application in both languages. With the performance indicators could be found, which Go has here advantages. On the other hand Kotlin can profit possibly from Java libraries, which can be merged here.
+
+The comparisons made show that when it comes to selecting a programming language for distributed systems, there is no clear answer as to suitability. Modern microservice architectures also make it possible to use both languages and even more - each tailored to the corresponding task to be solved.
 
 <<<
 
