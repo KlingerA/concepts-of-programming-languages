@@ -33,7 +33,12 @@ image::images/logo_th-rosenheim.png[TH Rosenheim, 250, 79]
 [[Text]]
 == Abstract
 
-...
+Distributed systems are becoming increasingly important in today's world. When programming these, particular focus is placed on scalability and performance. On the one hand, this is to ensure future viability and on the other hand to avoid high costs due to unnecessarily high computing power.
+
+Two promising and popular programming languages for this are Go and Kotlin. These were compared with regard to the points mentioned above. In addition, the exemplary implementation of a client-server model using sockets was tested.
+
+The results of the comparison were that both languages have advantages and disadvantages in certain points, but no general recommendation for the development of distributed systems can be given.
+
 
 '''
 <<<
@@ -203,4 +208,3 @@ The TechCave (2019): Distributed Systems | Distributed Computing Explained, in: 
 Toal, Ray (n.d.): Introduction to Distributed Programming, in: Loyola Marymount University, [online] https://cs.lmu.edu/%7Eray/notes/introdp/ [06.01.2021].
 
 Williams, Alice (2020): Getting Started with Sockets Concurrently in GoLang, in: DEV Community, [online] https://dev.to/alicewilliamstech/getting-started-with-sockets-in-golang-2j66 [09.01.2021].
-
