@@ -73,7 +73,7 @@ Kotlin is an object-oriented programming language developed by the Czech company
 [#header-distributed-programming]
 == Distributed systems and programming
 
-In order to understand distributed programming, some terms and relationships must first be defined. First, the concept of distributed systems will be explained. According to Toal (n.d.), this is a system of computers that communicate by messages over a network to work together on one or more tasks. Also, in a distributed system there is no shared physical memory, although this can be simulated by algorithms. In addition, processes here run on different networked processors (Saumweber 2020, p. 3). In summary, a distributed system is a collection of software and hardware components called nodes, which are interconnected over a network and together perform different logical operations. Ultimately, the complexity is hidden from the end user and the whole system appears to them as one computer (The TechCave 2019, 1:01-2:01).
+In order to understand distributed programming, some terms and relationships must be defined. First, the concept of distributed systems will be explained. According to Toal (n.d.), a distributed system is a system of computers that communicate by messages over a network to work together on one or more tasks. Also, in a distributed system there is no shared physical memory, although this can be simulated by algorithms. In addition, processes here run on different networked processors (Saumweber 2020, p. 3). In summary, a distributed system is a collection of software and hardware components called nodes, which are interconnected over a network and together perform different logical operations. Ultimately, the complexity is hidden from the end user and the whole system appears to be one computer (The TechCave 2019, 1:01-2:01).
 
 According to Andrews (2000), a program that operates in a distributed system is a distributed program and the process of developing it is called distributed programming.
 
@@ -154,7 +154,7 @@ include::{go-source}/socket-client.go[lines=22..39]
 include::{kotlin-source}/socket-server.kt[lines=13..33;40..67]
 ----
 
-[#kotlin-socket-client,source,koltin,linenums,caption='',title='{figure-caption} {counter:refnum} - Kotlin socket client (Mogensen 2018)']
+[#kotlin-socket-client,source,koltin,linenums,caption='',title='{figure-caption} {counter:refnum} - Kotlin socket client (Mogensen 2019)']
 ----
 include::{kotlin-source}/socket-client.kt[lines=19..52]
 ----
@@ -172,7 +172,7 @@ One difference in this implementation is that the Go example uses coroutines (`g
 
 This work, in addition to a brief introduction to distributed programming, was intended to make a comparison between Go and Kotlin. It became clear that both languages are suitable for the development of distributed systems.
 
-By goroutines and/or coroutines it became clear that certain programming concepts, which are possibly necessary for distributed systems, find application in both languages. With the performance indicators could be found, which Go has here advantages. On the other hand Kotlin can profit possibly from Java libraries, which can be merged here.
+With goroutines and/or coroutines it became clear that certain programming concepts, which are possibly necessary for distributed systems, find application in both languages. When it comes to performance, indicators could be found that show Go has a few advantages. On the other hand, Kotlin can benefit from Java libraries, which can be used here without any problems.
 
 The comparisons made show that when it comes to selecting a programming language for distributed systems, there is no clear answer as to suitability. Modern microservice architectures also make it possible to use both languages and even more - each tailored to the corresponding task to be solved.
 
