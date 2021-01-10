@@ -176,6 +176,7 @@ With goroutines and/or coroutines it became clear that certain programming conce
 
 The comparisons made show that when it comes to selecting a programming language for distributed systems, there is no clear answer as to suitability. Modern microservice architectures also make it possible to use both languages and even more - each tailored to the corresponding task to be solved.
 
+:!numbered:
 <<<
 
 [#header-references]
